@@ -15,6 +15,7 @@ function doLogin(){
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
+      sessionStorage.userName = user.displayName;
       console.log('user info is ', user);
       //redirect to the dashboard
       location.href="dashboard.html";
