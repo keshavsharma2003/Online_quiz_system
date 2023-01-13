@@ -15,7 +15,7 @@
         <h1 class="alert-success text-center"><i class="fa-solid fa-chalkboard-user"></i> Question CRUD</h1>
         <div class="form-group">
             <label>Choose Test</label>
-            <select id="testname" class="form-select">
+            <select id="testName" class="form-select">
                 <option value="JS">JS</option>
                 <option value="React">React JS</option>
                 <option value="Node">Node Js</option>
@@ -58,12 +58,14 @@
         <h3 class="alert-info text-center">Total <span id="total"></span> Mark <span id="mark"></span> UnMark <span id="unmark"></span></h3>
         <div>
             <button id="add" class="btn btn-primary">Add</button>
-            <button class="btn btn-danger">Delete</button>
-            <button class="btn btn-secondary">Update</button>
-            <button class="btn btn-success">Save</button>
-            <button class="btn btn-warning">Load</button>
-            <button class="btn btn-info">Search</button>
-            <button class="btn btn-secondary">Clear All</button>
+            <button id="delete" class="btn btn-danger">Delete</button>
+            <button id="update" class="btn btn-secondary">Update</button>
+            <button id="save" class="btn btn-success">Save</button>
+            <button id="load" class="btn btn-warning">Load</button>
+            <button id="save-db" class="btn btn-warning">Save to DB</button>
+            <button id="load-db" class="btn btn-warning">Load From DB</button>
+            <button id="search" class="btn btn-info">Search</button>
+            <button id="clear-all" class="btn btn-secondary">Clear All</button>
         </div>
         <br>
         <table class="table table-bordered ">

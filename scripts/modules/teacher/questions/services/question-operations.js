@@ -12,11 +12,14 @@ export const questionOperations = {
         console.log('Instance of Question', question instanceof Question);
         console.log('Instance of Question', questionObject instanceof Question);
     },
+    getAllQuestions(){
+        return this.questions;
+    },
     getSize(){
         return this.questions.length;
     },
     remove(){
-    
+        this.questions=this.questions.filter(question=>!question.isMarked);
     },
     update(){
     
